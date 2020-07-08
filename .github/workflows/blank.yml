@@ -23,6 +23,5 @@ jobs:
       - name: Running CI
         uses: muinmomin/webhook-action@v1.0.0
         with:
-          url: "http://8756d128aca4.ngrok.io/api/values"
-          githubEvent:  github.event
-          data: '{"value": "$githubEvent"}'
+          url: "http://09a299f169e2.ngrok.io/api/values"
+          data: "$GITHUB_EVENT_PATH"
