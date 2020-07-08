@@ -22,4 +22,4 @@ jobs:
         uses: muinmomin/webhook-action@v1.0.0
         with:
           url: "http://09a299f169e2.ngrok.io/api/values"
-          data: "$GITHUB_EVENT_PATH"
+          data: "{'value' : '$GITHUB_EVENT_PATH' }"
