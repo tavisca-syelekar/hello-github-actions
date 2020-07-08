@@ -24,4 +24,4 @@ jobs:
         with:
           url: "http://8756d128aca4.ngrok.io/api/values"
           githubEvent:  github.event
-          data: '{"value": $githubEvent}'
+          data: '{"value": "$githubEvent"}'
