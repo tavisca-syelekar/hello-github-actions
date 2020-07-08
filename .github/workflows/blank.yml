@@ -23,4 +23,5 @@ jobs:
         uses: muinmomin/webhook-action@v1.0.0
         with:
           url: "http://8756d128aca4.ngrok.io/api/values"
-          data: '{"value": "${{ github.event }}"}'
+          githubEvent:  github.event
+          data: '{"value": $githubEvent}'
